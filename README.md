@@ -27,7 +27,7 @@ Response Type: JSON
 ```
 Create a subclass from `GDXNetPacket` class named `MyServerPacket` from and implement `GDXRESTPacket` protocol. This is our API entry point class. Next, setup your class with the following properties:
 
-```
+```objective-c
 @implementation MyServerPacket
 
 - (instancetype)initWithJSON:(id)json {
@@ -83,7 +83,7 @@ Create a subclass from `GDXNetPacket` class named `MyServerPacket` from and impl
 
 Now we should handle our single API's method. Create subclass from your `MyServerPacket` class named `GetHistoryPacket` and specify its properties like this:
 
-```
+```objective-c
 @implementation GetHistoryPacket
 
 - (void)parseResponse:(id)response error:(NSError *)error {
@@ -99,7 +99,7 @@ Now we should handle our single API's method. Create subclass from your `MyServe
 
 And now, of course, we need a model class which will manage our requests. Create a class named `MyServerEntry` from `NSObject` and describe it like this:
 
-```
+```objective-c
 @implementation MyServerEntry
 
 - (instancetype)init {
@@ -129,7 +129,7 @@ And now, of course, we need a model class which will manage our requests. Create
 
 That's it. Now you can use your entry point like this:
 
-```
+```objective-c
 self.entry = [MyServerEntry new]; // strong property, for example
 [entry requestGetHistory]; // you will see results in Xcode console output
 ```
@@ -155,7 +155,7 @@ You will use the `GDXRESTAdapter` subclass to interact with REST contexts.
 ### GDXNet class
 Facade singleton class with two methods described below:
 
-```
+```objective-c
 - (NSDictionary<NSNumber *, NSString *> *)send:(GDXNetPacket *)packet userInfo:(NSDictionary *)userInfo method:(GDXNetSendMethod)method;
 - (void)cancelRequestByContextId:(NSString *)contextId;
 ```

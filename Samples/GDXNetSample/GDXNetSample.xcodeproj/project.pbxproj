@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF706BFC1BE64EBB00FD6A60 /* RSSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CF706BFB1BE64EBB00FD6A60 /* RSSReader.m */; };
+		CF706C031BE6973E00FD6A60 /* PacketAppleInsider.m in Sources */ = {isa = PBXBuildFile; fileRef = CF706C021BE6973E00FD6A60 /* PacketAppleInsider.m */; };
+		CF706C071BE6975A00FD6A60 /* PacketRSS.m in Sources */ = {isa = PBXBuildFile; fileRef = CF706C061BE6975A00FD6A60 /* PacketRSS.m */; };
+		CFA7AC191BE575F700685612 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC181BE575F700685612 /* main.m */; };
+		CFA7AC1C1BE575F700685612 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC1B1BE575F700685612 /* AppDelegate.m */; };
+		CFA7AC221BE575F700685612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA7AC201BE575F700685612 /* Main.storyboard */; };
+		CFA7AC241BE575F800685612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA7AC231BE575F800685612 /* Assets.xcassets */; };
+		CFA7AC271BE575F800685612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA7AC251BE575F800685612 /* LaunchScreen.storyboard */; };
+		CFA7AC8B1BE5950B00685612 /* GDXRESTAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC761BE5950B00685612 /* GDXRESTAdapter.m */; };
+		CFA7AC8C1BE5950B00685612 /* GDXRESTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC781BE5950B00685612 /* GDXRESTContext.m */; };
+		CFA7AC8E1BE5950B00685612 /* GDXRESTPacketOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC7D1BE5950B00685612 /* GDXRESTPacketOptions.m */; };
+		CFA7AC8F1BE5950B00685612 /* GDXNet.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC7F1BE5950B00685612 /* GDXNet.m */; };
+		CFA7AC901BE5950B00685612 /* GDXNetAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC811BE5950B00685612 /* GDXNetAdapter.m */; };
+		CFA7AC911BE5950B00685612 /* GDXNetContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC831BE5950B00685612 /* GDXNetContext.m */; };
+		CFA7AC921BE5950B00685612 /* GDXNetPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC851BE5950B00685612 /* GDXNetPacket.m */; };
+		CFA7AC931BE5950B00685612 /* GDXNetAdapter+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC881BE5950B00685612 /* GDXNetAdapter+Protected.m */; };
+		CFA7AC941BE5950B00685612 /* GDXNetContext+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7AC8A1BE5950B00685612 /* GDXNetContext+Protected.m */; };
+		F93C148AA0C3F803662C626B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5E8B5539C6321095713C8 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21A838296EAF28CB18502969 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7EA5E8B5539C6321095713C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF706BFA1BE64EBB00FD6A60 /* RSSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSReader.h; sourceTree = "<group>"; };
+		CF706BFB1BE64EBB00FD6A60 /* RSSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSReader.m; sourceTree = "<group>"; };
+		CF706C011BE6973E00FD6A60 /* PacketAppleInsider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketAppleInsider.h; sourceTree = "<group>"; };
+		CF706C021BE6973E00FD6A60 /* PacketAppleInsider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketAppleInsider.m; sourceTree = "<group>"; };
+		CF706C051BE6975A00FD6A60 /* PacketRSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketRSS.h; sourceTree = "<group>"; };
+		CF706C061BE6975A00FD6A60 /* PacketRSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketRSS.m; sourceTree = "<group>"; };
+		CFA7AC141BE575F700685612 /* GDXNetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDXNetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA7AC181BE575F700685612 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFA7AC1A1BE575F700685612 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFA7AC1B1BE575F700685612 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFA7AC211BE575F700685612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFA7AC231BE575F800685612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFA7AC261BE575F800685612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFA7AC281BE575F800685612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA7AC751BE5950B00685612 /* GDXRESTAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXRESTAdapter.h; sourceTree = "<group>"; };
+		CFA7AC761BE5950B00685612 /* GDXRESTAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXRESTAdapter.m; sourceTree = "<group>"; };
+		CFA7AC771BE5950B00685612 /* GDXRESTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXRESTContext.h; sourceTree = "<group>"; };
+		CFA7AC781BE5950B00685612 /* GDXRESTContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXRESTContext.m; sourceTree = "<group>"; };
+		CFA7AC7A1BE5950B00685612 /* GDXRESTPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXRESTPacket.h; sourceTree = "<group>"; };
+		CFA7AC7C1BE5950B00685612 /* GDXRESTPacketOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXRESTPacketOptions.h; sourceTree = "<group>"; };
+		CFA7AC7D1BE5950B00685612 /* GDXRESTPacketOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXRESTPacketOptions.m; sourceTree = "<group>"; };
+		CFA7AC7E1BE5950B00685612 /* GDXNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXNet.h; sourceTree = "<group>"; };
+		CFA7AC7F1BE5950B00685612 /* GDXNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXNet.m; sourceTree = "<group>"; };
+		CFA7AC801BE5950B00685612 /* GDXNetAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXNetAdapter.h; sourceTree = "<group>"; };
+		CFA7AC811BE5950B00685612 /* GDXNetAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXNetAdapter.m; sourceTree = "<group>"; };
+		CFA7AC821BE5950B00685612 /* GDXNetContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXNetContext.h; sourceTree = "<group>"; };
+		CFA7AC831BE5950B00685612 /* GDXNetContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXNetContext.m; sourceTree = "<group>"; };
+		CFA7AC841BE5950B00685612 /* GDXNetPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDXNetPacket.h; sourceTree = "<group>"; };
+		CFA7AC851BE5950B00685612 /* GDXNetPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDXNetPacket.m; sourceTree = "<group>"; };
+		CFA7AC871BE5950B00685612 /* GDXNetAdapter+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDXNetAdapter+Protected.h"; sourceTree = "<group>"; };
+		CFA7AC881BE5950B00685612 /* GDXNetAdapter+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDXNetAdapter+Protected.m"; sourceTree = "<group>"; };
+		CFA7AC891BE5950B00685612 /* GDXNetContext+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDXNetContext+Protected.h"; sourceTree = "<group>"; };
+		CFA7AC8A1BE5950B00685612 /* GDXNetContext+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDXNetContext+Protected.m"; sourceTree = "<group>"; };
+		FA72AAF2DD28712F93E41132 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFA7AC111BE575F700685612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93C148AA0C3F803662C626B /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A898EA0F94B6A74101D5507 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA72AAF2DD28712F93E41132 /* Pods.debug.xcconfig */,
+				21A838296EAF28CB18502969 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6554F38E215C10366FB2BE66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA5E8B5539C6321095713C8 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF706C001BE6973E00FD6A60 /* GDXNetExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF706C011BE6973E00FD6A60 /* PacketAppleInsider.h */,
+				CF706C021BE6973E00FD6A60 /* PacketAppleInsider.m */,
+			);
+			path = GDXNetExtensions;
+			sourceTree = "<group>";
+		};
+		CF706C041BE6974700FD6A60 /* Packets */ = {
+			isa = PBXGroup;
+			children = (
+				CF706C051BE6975A00FD6A60 /* PacketRSS.h */,
+				CF706C061BE6975A00FD6A60 /* PacketRSS.m */,
+			);
+			path = Packets;
+			sourceTree = "<group>";
+		};
+		CFA7AC0B1BE575F700685612 = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC161BE575F700685612 /* GDXNetSample */,
+				CFA7AC151BE575F700685612 /* Products */,
+				3A898EA0F94B6A74101D5507 /* Pods */,
+				6554F38E215C10366FB2BE66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFA7AC151BE575F700685612 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC141BE575F700685612 /* GDXNetSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFA7AC161BE575F700685612 /* GDXNetSample */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC2E1BE5761000685612 /* Classes */,
+				CFA7AC1A1BE575F700685612 /* AppDelegate.h */,
+				CFA7AC1B1BE575F700685612 /* AppDelegate.m */,
+				CFA7AC201BE575F700685612 /* Main.storyboard */,
+				CFA7AC231BE575F800685612 /* Assets.xcassets */,
+				CFA7AC251BE575F800685612 /* LaunchScreen.storyboard */,
+				CFA7AC281BE575F800685612 /* Info.plist */,
+				CFA7AC181BE575F700685612 /* main.m */,
+			);
+			path = GDXNetSample;
+			sourceTree = "<group>";
+		};
+		CFA7AC2E1BE5761000685612 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC2F1BE5761000685612 /* Model */,
+				CFA7AC301BE5761000685612 /* Presenter */,
+				CFA7AC311BE5761000685612 /* Vendor */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CFA7AC2F1BE5761000685612 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF706C001BE6973E00FD6A60 /* GDXNetExtensions */,
+				CF706C041BE6974700FD6A60 /* Packets */,
+				CF706BFA1BE64EBB00FD6A60 /* RSSReader.h */,
+				CF706BFB1BE64EBB00FD6A60 /* RSSReader.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFA7AC301BE5761000685612 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CFA7AC311BE5761000685612 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC321BE5764A00685612 /* GDXNet */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		CFA7AC321BE5764A00685612 /* GDXNet */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC731BE5950B00685612 /* Extensions */,
+				CFA7AC861BE5950B00685612 /* Protected */,
+				CFA7AC7E1BE5950B00685612 /* GDXNet.h */,
+				CFA7AC7F1BE5950B00685612 /* GDXNet.m */,
+				CFA7AC801BE5950B00685612 /* GDXNetAdapter.h */,
+				CFA7AC811BE5950B00685612 /* GDXNetAdapter.m */,
+				CFA7AC821BE5950B00685612 /* GDXNetContext.h */,
+				CFA7AC831BE5950B00685612 /* GDXNetContext.m */,
+				CFA7AC841BE5950B00685612 /* GDXNetPacket.h */,
+				CFA7AC851BE5950B00685612 /* GDXNetPacket.m */,
+			);
+			path = GDXNet;
+			sourceTree = "<group>";
+		};
+		CFA7AC731BE5950B00685612 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC741BE5950B00685612 /* REST */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFA7AC741BE5950B00685612 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC791BE5950B00685612 /* Packets */,
+				CFA7AC751BE5950B00685612 /* GDXRESTAdapter.h */,
+				CFA7AC761BE5950B00685612 /* GDXRESTAdapter.m */,
+				CFA7AC771BE5950B00685612 /* GDXRESTContext.h */,
+				CFA7AC781BE5950B00685612 /* GDXRESTContext.m */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		CFA7AC791BE5950B00685612 /* Packets */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC7A1BE5950B00685612 /* GDXRESTPacket.h */,
+				CFA7AC7C1BE5950B00685612 /* GDXRESTPacketOptions.h */,
+				CFA7AC7D1BE5950B00685612 /* GDXRESTPacketOptions.m */,
+			);
+			path = Packets;
+			sourceTree = "<group>";
+		};
+		CFA7AC861BE5950B00685612 /* Protected */ = {
+			isa = PBXGroup;
+			children = (
+				CFA7AC871BE5950B00685612 /* GDXNetAdapter+Protected.h */,
+				CFA7AC881BE5950B00685612 /* GDXNetAdapter+Protected.m */,
+				CFA7AC891BE5950B00685612 /* GDXNetContext+Protected.h */,
+				CFA7AC8A1BE5950B00685612 /* GDXNetContext+Protected.m */,
+			);
+			path = Protected;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFA7AC131BE575F700685612 /* GDXNetSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA7AC2B1BE575F800685612 /* Build configuration list for PBXNativeTarget "GDXNetSample" */;
+			buildPhases = (
+				CBCB2B123574C273586492A1 /* Check Pods Manifest.lock */,
+				CFA7AC101BE575F700685612 /* Sources */,
+				CFA7AC111BE575F700685612 /* Frameworks */,
+				CFA7AC121BE575F700685612 /* Resources */,
+				E302B71F322654155122D4F6 /* Embed Pods Frameworks */,
+				F10314658CCCFB2B19130152 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDXNetSample;
+			productName = GDXNetSample;
+			productReference = CFA7AC141BE575F700685612 /* GDXNetSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFA7AC0C1BE575F700685612 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Georgiy Malyukov";
+				TargetAttributes = {
+					CFA7AC131BE575F700685612 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = CFA7AC0F1BE575F700685612 /* Build configuration list for PBXProject "GDXNetSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFA7AC0B1BE575F700685612;
+			productRefGroup = CFA7AC151BE575F700685612 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFA7AC131BE575F700685612 /* GDXNetSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFA7AC121BE575F700685612 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA7AC271BE575F800685612 /* LaunchScreen.storyboard in Resources */,
+				CFA7AC241BE575F800685612 /* Assets.xcassets in Resources */,
+				CFA7AC221BE575F700685612 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBCB2B123574C273586492A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E302B71F322654155122D4F6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10314658CCCFB2B19130152 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFA7AC101BE575F700685612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF706BFC1BE64EBB00FD6A60 /* RSSReader.m in Sources */,
+				CFA7AC8B1BE5950B00685612 /* GDXRESTAdapter.m in Sources */,
+				CF706C031BE6973E00FD6A60 /* PacketAppleInsider.m in Sources */,
+				CFA7AC931BE5950B00685612 /* GDXNetAdapter+Protected.m in Sources */,
+				CFA7AC8C1BE5950B00685612 /* GDXRESTContext.m in Sources */,
+				CFA7AC941BE5950B00685612 /* GDXNetContext+Protected.m in Sources */,
+				CFA7AC921BE5950B00685612 /* GDXNetPacket.m in Sources */,
+				CFA7AC1C1BE575F700685612 /* AppDelegate.m in Sources */,
+				CFA7AC8E1BE5950B00685612 /* GDXRESTPacketOptions.m in Sources */,
+				CFA7AC901BE5950B00685612 /* GDXNetAdapter.m in Sources */,
+				CF706C071BE6975A00FD6A60 /* PacketRSS.m in Sources */,
+				CFA7AC911BE5950B00685612 /* GDXNetContext.m in Sources */,
+				CFA7AC191BE575F700685612 /* main.m in Sources */,
+				CFA7AC8F1BE5950B00685612 /* GDXNet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFA7AC201BE575F700685612 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFA7AC211BE575F700685612 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFA7AC251BE575F800685612 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFA7AC261BE575F800685612 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFA7AC291BE575F800685612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFA7AC2A1BE575F800685612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFA7AC2C1BE575F800685612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA72AAF2DD28712F93E41132 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GDXNetSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdxrepo.GDXNetSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFA7AC2D1BE575F800685612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A838296EAF28CB18502969 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GDXNetSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdxrepo.GDXNetSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFA7AC0F1BE575F700685612 /* Build configuration list for PBXProject "GDXNetSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA7AC291BE575F800685612 /* Debug */,
+				CFA7AC2A1BE575F800685612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA7AC2B1BE575F800685612 /* Build configuration list for PBXNativeTarget "GDXNetSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA7AC2C1BE575F800685612 /* Debug */,
+				CFA7AC2D1BE575F800685612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFA7AC0C1BE575F700685612 /* Project object */;
+}

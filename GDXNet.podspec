@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "GDXNet"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "Well-organized Objective-C network interaction library."
   s.homepage         = "https://github.com/GDXRepo/GDXNet"
   s.license          = { :type => "Apache", :file => "LICENSE" }

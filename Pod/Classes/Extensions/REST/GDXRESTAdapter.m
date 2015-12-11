@@ -251,7 +251,12 @@
     
     void (^accept)(NSURLSessionDataTask *task, id responseObject, NSError *error) = ^(NSURLSessionDataTask *task, id responseObject, NSError *error) {
         __strong __typeof(self) strongSelf = weakSelf;
+        // read HTTP header fields
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)task.response;
         
+        if ([httpResponse respondsToSelector:@selector(allHeaderFields)]) {
+            ctx.responseHeaders = [httpResponse allHeaderFields];
+        }
         if (ctx.isCancelled) { // cancelled request
             // assign error only, it may be useful if exists
             ctx.error = error;
@@ -259,8 +264,8 @@
             [strongSelf processContextFailure:ctx];
         }
         else if (task && responseObject && !error) { // success
+            // parse response asynchronously
             dispatch_async(queueParsing, ^{
-                // process response
                 [ctx processTask:task response:responseObject error:nil];
                 
                 dispatch_sync(queueMain, ^{

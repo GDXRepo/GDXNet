@@ -215,7 +215,8 @@
 @property (readonly, nonatomic) NSURLSessionDataTask *task;
 @property (readonly, nonatomic) id responseObject;
 
-@property (copy, nonatomic) NSError *error;
+@property (copy, nonatomic) NSDictionary *responseHeaders;
+@property (copy, nonatomic) NSError      *error;
 
 
 #pragma mark - Processing

@@ -210,15 +210,13 @@
 @interface GDXNetContext : NSObject {
     
 }
-// system
+
 @property (readonly, nonatomic) NSString *uid;
 @property (readonly, nonatomic) Protocol *acceptablePacketProtocol;
 @property (readonly, nonatomic) BOOL     isCancelled;
-// in
+
 @property (readonly, nonatomic) GDXNetPacket *packet;
 @property (readonly, nonatomic) NSDictionary *userInfo;
-// utils
-@property (copy, nonatomic) NSDictionary *responseHeaders;
 
 
 #pragma mark - Root

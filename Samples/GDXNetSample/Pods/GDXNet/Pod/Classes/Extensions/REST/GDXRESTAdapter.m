@@ -292,6 +292,7 @@
         case GDXRESTPacketTypeGET: {
             [manager GET:pack.urlRelative
               parameters:pack.params
+                progress:nil
                  success:^(NSURLSessionDataTask *task, id response) {
                      accept(task, response, nil);
                  }
@@ -303,6 +304,7 @@
         case GDXRESTPacketTypePOST: {
             [manager POST:pack.urlRelative
                parameters:pack.params
+                 progress:nil
                   success:^(NSURLSessionDataTask *task, id response) {
                       accept(task, response, nil);
                   }

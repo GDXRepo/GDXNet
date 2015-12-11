@@ -1,0 +1,1 @@
+../../../GDXNet/Pod/Classes/Protected/GDXNetAdapter+Protected.h

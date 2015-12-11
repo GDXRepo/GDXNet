@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GDXNet-test.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GDXNet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>119E830EC3B8CAFBA73B57863BD1FDC8</key>
+		<key>4DF89ED09ECE1096FAD6F41FF73B2108</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4878C70B21CA37D7CB8A476BF986741B</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A766F60C4B3A40CDE7B97B26AF63F151</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4449CD757EB3A6F3AD085537A3D9EF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

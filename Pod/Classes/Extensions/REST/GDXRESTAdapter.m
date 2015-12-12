@@ -309,6 +309,7 @@
         case GDXRESTPacketTypePOST: {
             [manager POST:pack.urlRelative
                parameters:pack.params
+constructingBodyWithBlock:pack.bodyConstructionBlock
                  progress:nil
                   success:^(NSURLSessionDataTask *task, id response) {
                       accept(task, response, nil);

@@ -221,10 +221,9 @@ typedef NS_ENUM(NSInteger, GDXRESTOperationType) {
 
 @protocol GDXRESTPacket<NSObject>
 @required
-
 @property (readonly, nonatomic) NSString     *urlBase;
 @property (readonly, nonatomic) NSString     *urlRelative;
-@property (readonly, nonatomic) NSArray      *headers;
+@property (readonly, nonatomic) NSDictionary *headers;
 @property (readonly, nonatomic) NSDictionary *params;
 
 @property (readonly, nonatomic) GDXRESTPacketType type;

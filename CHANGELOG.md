@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this file.
 
 --- 
 
-##[1.1.1](https://github.com/GDXRepo/GDXNet/releases/tag/1.1.1) (12/12/2015)
+##[1.1.2](https://github.com/GDXRepo/GDXNet/releases/tag/1.1.2) (12/12/2015)
 Released on Saturday, December 12, 2015.
 
 ### Added
 * `GDXRESTContext` class now contains `responseHeaders` property with all HTTP headers fields from a response.
 
 ### Fixed
+* Added headers support for REST packets. The `headers` property's type from the `GDXRESTPacket` protocol changed from `NSArray *` to `NSDictionary *`.
 * `GDXRESTAdapter` converted for using `AFNetworking` 3.0 library version.
 * Removed unused `ViewController` class from a storyboard.
 

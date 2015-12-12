@@ -235,6 +235,11 @@
             break;
         }
     }
+    // set headers
+    NSDictionary *headers = [pack headers];
+    for (NSString *key in headers.allKeys) {
+        [manager.requestSerializer setValue:headers[key] forHTTPHeaderField:key];
+    }
     // select response type
     switch (pack.responseType) {
         case GDXRESTOperationTypeHTTP: {

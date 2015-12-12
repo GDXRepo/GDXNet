@@ -26,8 +26,8 @@
     return @"http://appleinsider.ru/";
 }
 
-- (NSArray *)headers {
-    return @[];
+- (NSDictionary *)headers {
+    return @{};
 }
 
 - (NSString *)urlRelative {

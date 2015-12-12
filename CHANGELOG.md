@@ -4,11 +4,12 @@ All notable changes to this project will be documented in this file.
 
 --- 
 
-##[1.1.2](https://github.com/GDXRepo/GDXNet/releases/tag/1.1.2) (12/12/2015)
+##[1.1.3](https://github.com/GDXRepo/GDXNet/releases/tag/1.1.3) (12/12/2015)
 Released on Saturday, December 12, 2015.
 
 ### Added
-* `GDXRESTContext` class now contains `responseHeaders` property with all HTTP headers fields from a response.
+* Added `responseHeaders` property with all HTTP headers fields from a response for the `GDXRESTPacket` protocol.
+* Added `bodyConstructionBlock` property which allows you to customize your REST packet's body form data for the `GDXRESTPacket` protocol.
 
 ### Fixed
 * Added headers support for REST packets. The `headers` property's type from the `GDXRESTPacket` protocol changed from `NSArray *` to `NSDictionary *`.

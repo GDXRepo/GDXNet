@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FAA4B2070DF5080982C68E54'
+               BlueprintIdentifier = '4DF299051C3EADF921575FEE'
                BlueprintName = 'GDXNet-test'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'test.bundle'>

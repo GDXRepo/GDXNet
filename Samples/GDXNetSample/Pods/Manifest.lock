@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.1)
   - AFNetworking/UIKit (3.0.1):
     - AFNetworking/NSURLSession
-  - GDXNet (1.0.1):
+  - GDXNet (1.1.3):
     - AFNetworking
 
 DEPENDENCIES:
@@ -22,6 +22,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 20d8749e03e45f1e5c046ad0b647e0b07bcdd91f
-  GDXNet: 8b2b73ef41890a8367276f8bde98ed4dde55b96b
+  GDXNet: 013db279536d86942430eb21b67265244587f454
 
 COCOAPODS: 0.39.0

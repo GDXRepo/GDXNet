@@ -207,6 +207,7 @@
 #import <Foundation/Foundation.h>
 #import "GDXNetPacket.h"
 #import "GDXRESTPacketOptions.h"
+#import <AFNetworking/AFURLRequestSerialization.h>
 
 typedef NS_ENUM(NSInteger, GDXRESTPacketType) {
     GDXRESTPacketTypeGET,
@@ -225,6 +226,7 @@ typedef NS_ENUM(NSInteger, GDXRESTOperationType) {
 @property (readonly, nonatomic) NSString     *urlRelative;
 @property (readonly, nonatomic) NSDictionary *headers;
 @property (readonly, nonatomic) NSDictionary *params;
+@property (readonly, nonatomic) void (^bodyConstructionBlock)(id<AFMultipartFormData> formData);
 
 @property (readonly, nonatomic) GDXRESTPacketType type;
 

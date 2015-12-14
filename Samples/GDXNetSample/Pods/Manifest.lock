@@ -1,27 +1,27 @@
 PODS:
-  - AFNetworking (3.0.1):
-    - AFNetworking/NSURLSession (= 3.0.1)
-    - AFNetworking/Reachability (= 3.0.1)
-    - AFNetworking/Security (= 3.0.1)
-    - AFNetworking/Serialization (= 3.0.1)
-    - AFNetworking/UIKit (= 3.0.1)
-  - AFNetworking/NSURLSession (3.0.1):
+  - AFNetworking (3.0.2):
+    - AFNetworking/NSURLSession (= 3.0.2)
+    - AFNetworking/Reachability (= 3.0.2)
+    - AFNetworking/Security (= 3.0.2)
+    - AFNetworking/Serialization (= 3.0.2)
+    - AFNetworking/UIKit (= 3.0.2)
+  - AFNetworking/NSURLSession (3.0.2):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.0.1)
-  - AFNetworking/Security (3.0.1)
-  - AFNetworking/Serialization (3.0.1)
-  - AFNetworking/UIKit (3.0.1):
+  - AFNetworking/Reachability (3.0.2)
+  - AFNetworking/Security (3.0.2)
+  - AFNetworking/Serialization (3.0.2)
+  - AFNetworking/UIKit (3.0.2):
     - AFNetworking/NSURLSession
-  - GDXNet (1.1.3):
+  - GDXNet (1.1.4):
     - AFNetworking
 
 DEPENDENCIES:
   - GDXNet
 
 SPEC CHECKSUMS:
-  AFNetworking: 20d8749e03e45f1e5c046ad0b647e0b07bcdd91f
-  GDXNet: 013db279536d86942430eb21b67265244587f454
+  AFNetworking: 2f30b7db399a405b12b24e049c654f108fc8c54d
+  GDXNet: 9c6bb3511239e09b360d37118dc75431160e5902
 
 COCOAPODS: 0.39.0

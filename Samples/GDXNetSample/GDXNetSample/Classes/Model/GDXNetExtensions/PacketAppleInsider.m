@@ -39,6 +39,10 @@
     return @{};
 }
 
+- (void (^)(id<AFMultipartFormData> formData))bodyConstructionBlock {
+    return nil;
+}
+
 - (GDXRESTPacketType)type {
     return GDXRESTPacketTypePOST;
 }

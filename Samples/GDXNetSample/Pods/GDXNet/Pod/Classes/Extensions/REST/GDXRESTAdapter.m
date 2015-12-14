@@ -307,16 +307,29 @@
             break;
         }
         case GDXRESTPacketTypePOST: {
-            [manager POST:pack.urlRelative
-               parameters:pack.params
-constructingBodyWithBlock:pack.bodyConstructionBlock
-                 progress:nil
-                  success:^(NSURLSessionDataTask *task, id response) {
-                      accept(task, response, nil);
-                  }
-                  failure:^(NSURLSessionDataTask *task, NSError *error) {
-                      accept(task, nil, error);
-                  }];
+            if (pack.bodyConstructionBlock) {
+                [manager POST:pack.urlRelative
+                   parameters:pack.params
+    constructingBodyWithBlock:pack.bodyConstructionBlock
+                     progress:nil
+                      success:^(NSURLSessionDataTask *task, id response) {
+                          accept(task, response, nil);
+                      }
+                      failure:^(NSURLSessionDataTask *task, NSError *error) {
+                          accept(task, nil, error);
+                      }];
+            }
+            else {
+                [manager POST:pack.urlRelative
+                   parameters:pack.params
+                     progress:nil
+                      success:^(NSURLSessionDataTask *task, id response) {
+                          accept(task, response, nil);
+                      }
+                      failure:^(NSURLSessionDataTask *task, NSError *error) {
+                          accept(task, nil, error);
+                      }];
+            }
             break;
         }
     }

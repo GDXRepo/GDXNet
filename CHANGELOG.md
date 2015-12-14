@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 --- 
 
+##[1.1.4](https://github.com/GDXRepo/GDXNet/releases/tag/1.1.4) (15/12/2015)
+Released on Thursday, December 15, 2015.
+
+### Fixed
+* Due to `AFNetworking` internal logic sending POST with body construction block and without it produces different NSURLRequest instances. Because of that packets with nil `bodyConstructionBlock` property now uses default sending method.
+
+
 ##[1.1.3](https://github.com/GDXRepo/GDXNet/releases/tag/1.1.3) (12/12/2015)
 Released on Saturday, December 12, 2015.
 
